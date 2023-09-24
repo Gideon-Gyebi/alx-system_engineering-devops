@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# A Bash Script that uses ssh to connect to the server 54.173.238.255
+# using the users private key stored in a file school found in
+# the users home directory
+
+ssh -i ~/.ssh/school ubuntu@54.173.238.255

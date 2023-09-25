@@ -3,4 +3,4 @@
 # using the users private key stored in a file school found in
 # the users home directory
 
-ssh -i ~/.ssh/school ubuntu@54.173.238.255
+ssh -i ~/.ssh/school ubuntu@54.237.13.5

@@ -1,9 +1,9 @@
-# nginx_config (/ect/nginx/sites-available/default)
+# nginx_config (/etc/nginx/sites-available/default)
 server {
     listen 80 default_server;
-    listen [::]:80 default_server;
+    listen [::]:80 default_server ipv6only=on;
 
-    server_name 54.237.13.5
+    server_name 54.237.13.5;
 
     add_header X-Served-By 312908-web-01;
 
@@ -16,7 +16,7 @@ server {
     }
 
     error_page 404 /404.html;
-    location /404 {
+    location /404.html {
       root /var/www/html;
       internal;
     }
